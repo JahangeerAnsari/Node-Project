@@ -1,0 +1,23 @@
+<form action="/createPost" method="POST" enctype="multipart/form-data">
+    <div class="group">
+     <h3 class="post-header">Create New Post</h3>
+    </div>
+    <div class="group">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title"
+         class="control" placeholder="Post title" value="<%= title %>">
+    </div>
+    <div class="group">
+        <label for="body">Body</label>
+        <textarea name="body" id="body" class="control" cols="30" rows="10"><%= body %></textarea>
+    </div>
+    <div class="group">
+        <label for="imageLabel" class="fileLabel">Upload image</label>
+        <input type="file" name="image"  id="imageLabel"
+        
+         class="control" placeholder="Post title"/>
+    </div>
+    <div class="group">
+        <button type="submit" value="add Post" class="btn btn-sweet">Add post</button>
+    </div>
+</form>
